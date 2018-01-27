@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/nav_div_chapada">
+        <menu>
+            <item
+                android:id="@+id/nav_inicio"
+                android:icon="@mipmap/ic_nav_inicio"
+                android:title="@string/nav_inicio" />
+            <item
+                android:id="@+id/nav_historia"
+                android:icon="@mipmap/ic_nav_historia"
+                android:title="@string/nav_historia" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_div_passeios">
+        <menu>
+            <item
+                android:id="@+id/nav_cachoeira"
+                android:icon="@mipmap/ic_nav_cachoeira"
+                android:title="@string/nav_cachoeiras" />
+            <item
+                android:id="@+id/nav_trilhas"
+                android:icon="@mipmap/ic_nav_trilha"
+                android:title="@string/nav_trilhas" />
+            <item
+                android:id="@+id/nav_atracoes"
+                android:icon="@mipmap/ic_nav_outras_atracoes"
+                android:title="@string/nav_atracoes" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_div_hospedagem">
+        <menu>
+            <item
+                android:id="@+id/nav_hoteis"
+                android:icon="@mipmap/ic_nav_hotel"
+                android:title="@string/nav_hoteis" />
+            <item
+                android:id="@+id/nav_pousadas"
+                android:icon="@mipmap/ic_nav_pousada"
+                android:title="@string/nav_pousadas" />
+            <item
+                android:id="@+id/nav_camping"
+                android:icon="@mipmap/ic_nav_camping"
+                android:title="@string/nav_campings" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_div_sobre_aplicativo">
+        <menu>
+            <item
+                android:id="@+id/nav_info_gerais"
+                android:icon="@mipmap/ic_nav_info_geral"
+                android:title="@string/nav_info_geral" />
+            <item
+                android:id="@+id/nav_creditos"
+                android:icon="@mipmap/ic_nav_creditos"
+                android:title="@string/nav_creditos" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@mipmap/ic_nav_feedback"
+                android:title="@string/nav_feedback" />
+        </menu>
+    </item>
+
+</menu>

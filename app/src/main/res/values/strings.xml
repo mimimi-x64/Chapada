@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Chapada</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- NavDrawer Divisores -->
+    <string name="nav_div_chapada">A Chapada</string>
+    <string name="nav_div_sobre_aplicativo">Sobre o Aplicativo</string>
+    <string name="nav_div_hospedagem">Hospedagem</string>
+    <string name="nav_div_passeios">Passeios</string>
+    <!-- NavDrawer Itens -->
+    <string name="action_settings">Settings</string>
+    <string name="nav_inicio">Início</string>
+    <string name="nav_historia">História</string>
+    <string name="nav_cachoeiras">Cachoeiras</string>
+    <string name="nav_trilhas">Trilhas</string>
+    <string name="nav_atracoes">Outras atrações</string>
+    <string name="nav_hoteis">Hotéis</string>
+    <string name="nav_pousadas">Pousadas</string>
+    <string name="nav_campings">Campings</string>
+    <string name="nav_info_geral">Informações gerais</string>
+    <string name="nav_creditos">Créditos</string>
+    <string name="nav_feedback">Feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
