@@ -80,23 +80,24 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_inicio: // Handle the camera action
-                fragment = new HotelFragment();
                 break;
             case R.id.nav_historia:
-                fragment = new PousadaFragment();
                 break;
             case R.id.nav_cachoeira:
-                fragment = new CampingFragment();
+                fragment = new CachoeiraFragment();
                 break;
             case R.id.nav_trilhas:
                 break;
             case R.id.nav_atracoes:
                 break;
             case R.id.nav_hoteis:
+                fragment = new HotelFragment();
                 break;
             case R.id.nav_pousadas:
+                fragment = new PousadaFragment();
                 break;
             case R.id.nav_camping:
+                fragment = new CampingFragment();
                 break;
             case R.id.nav_info_gerais:
                 break;
