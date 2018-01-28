@@ -6,39 +6,76 @@ package com.example.android.chapada;
 
 public class ListItens {
 
+    //Waterfall Variables
     private int mPhotoID;
-    private String mTitleName;
+    private String mWaterfallName;
     private String mCityName;
 
-    public ListItens(int photoID, String titleName, String cityName) {
+    //Hosting Variables
+    private String mHostName;
+    private int mContactNumber;
+    private String mWebSite;
+
+    //Check if resources were initialized
+    private static final int NO_RESOURCE = -1;
+
+    //Waterfall Constructor
+    public ListItens(int photoID, String waterfallName, String cityName) {
         mPhotoID = photoID;
-        mTitleName = titleName;
+        mWaterfallName = waterfallName;
         mCityName = cityName;
     }
 
-    //Getter
+    //Hosting Constructor
+    public ListItens(String hostName, String cityName, String webSite, int contactNumber){
+        mHostName = hostName;
+        mCityName = cityName;
+        mWebSite = webSite;
+        mContactNumber = contactNumber;
+    }
+
+    //Check Methods
+    public boolean checkImageResource(){
+        return mPhotoID != NO_RESOURCE;
+    }
+    public boolean checkWaterfall(){
+        return mWaterfallName != null;
+    }
+    public boolean checkWebsite(){
+        return mWebSite != null;
+    }
+    public boolean checkHost(){
+        return mHostName != null;
+    }
+    public boolean checkContactNumber(){
+        return mContactNumber != NO_RESOURCE;
+    }
+
+
+    //All Getter Methods
     public int getPhotoID(){
         return mPhotoID;
     }
-
     public String getTitleName() {
-        return mTitleName;
+        return mWaterfallName;
     }
-
     public String getCityName() {
         return mCityName;
     }
-
-    //Setter
-    public void setPhotoID( int mPhotoID ) {
-        this.mPhotoID = mPhotoID;
+    public String getWebSite() {
+        return mWebSite;
     }
 
-    public void setTitleName( String mTitleName ) {
-        this.mTitleName = mTitleName;
+    @Override
+    public String toString() {
+        return "" + mContactNumber;
     }
 
-    public void setCityName( String mCityName ) {
-        this.mCityName = mCityName;
+    public int getContactNumber() {
+        return mContactNumber;
     }
+    public String getHostName() {
+        return mHostName;
+    }
+
 }

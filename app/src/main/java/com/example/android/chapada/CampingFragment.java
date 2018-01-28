@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -23,8 +27,28 @@ public class CampingFragment extends Fragment {
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState ) {
+        View rootView;
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_camping, container, false);
+        rootView = inflater.inflate(R.layout.list_view_fragment, container, false);
+
+        ArrayList<ListItens> campingItens = new ArrayList<ListItens>();
+
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        campingItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+
+        ListAdapter campingAdapter = new ListAdapter(getActivity(), campingItens);
+        ListView listView = rootView.findViewById(R.id.list);
+        listView.setAdapter(campingAdapter);
+
+        return rootView;
     }
 
     @Override
