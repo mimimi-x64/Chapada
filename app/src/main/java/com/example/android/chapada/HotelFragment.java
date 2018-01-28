@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -24,7 +27,23 @@ public class HotelFragment extends Fragment {
     public View onCreateView( LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState ) {
         View rootView = inflater.inflate(R.layout.fragment_hotel, container, false);
-        // Inflate the layout for this fragment
+
+        ArrayList<ListItens> hotelItens= new ArrayList<ListItens>();
+
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+
+        ListAdapter hotelAdapter = new ListAdapter(getActivity(), hotelItens);
+        ListView listView = rootView.findViewById(R.id.list);
+        listView.setAdapter(hotelAdapter);
+
         return rootView;
     }
 
