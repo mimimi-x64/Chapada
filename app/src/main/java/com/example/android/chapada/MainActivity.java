@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity
         //creating fragment object
         Fragment fragment = null;
 
+        //Initialize intent object
+        Intent intent = new Intent( );
         // Handle navigation view item clicks here.
         int id = item.getItemId( );
 
@@ -82,6 +84,8 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_inicio: // Handle the camera action
                 break;
             case R.id.nav_historia:
+                intent.setClass(this, HistoryActivity.class);
+                startActivity(intent);
                 break;
             case R.id.nav_cachoeira:
                 fragment = new CachoeiraFragment();

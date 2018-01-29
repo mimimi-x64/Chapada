@@ -6,23 +6,23 @@
     android:orientation="horizontal">
 
     <ImageView
-        android:layout_width="77dp"
-        android:layout_height="77dp"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/img_list_cachoeira"/>
+        android:id="@+id/img_list_cachoeira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:id="@+id/text_container"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
-            android:textStyle="bold"
             android:id="@+id/listItem_waterfall"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/listItem_city"
@@ -34,13 +34,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/listItem_website"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listItem_website"/>
+            android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/listItem_hostName"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listItem_hostName"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

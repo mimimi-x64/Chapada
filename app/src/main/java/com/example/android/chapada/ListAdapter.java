@@ -31,16 +31,6 @@ public class ListAdapter extends ArrayAdapter<ListItens> {
         // Get the object located at this position in the list
         ListItens getItemListOnPosition = getItem(position);
 
-        // Find ImageView on XML
-        ImageView waterfallPhoto = listItemView.findViewById(R.id.img_list_cachoeira);
-        //Set image from ListItem objecto on ImageView if object exists
-        if (getItemListOnPosition.checkImageResource()){
-            waterfallPhoto.setImageResource(getItemListOnPosition.getPhotoID());
-            waterfallPhoto.setVisibility(View.VISIBLE);
-        } else {
-            waterfallPhoto.setVisibility(View.GONE);
-        }
-
         // Find TextView on XML inflated
         TextView cityName = (TextView) listItemView.findViewById(R.id.listItem_city);
         // Set text from ListItem object on TextView
@@ -79,6 +69,16 @@ public class ListAdapter extends ArrayAdapter<ListItens> {
             contactNumber.setVisibility(View.VISIBLE);
         } else {
             contactNumber.setVisibility(View.GONE);
+        }
+
+        // Find ImageView on XML
+        ImageView waterfallPhoto = listItemView.findViewById(R.id.img_list_cachoeira);
+        //Set image from ListItem object on ImageView if object exists
+        if (getItemListOnPosition.checkImageResource( )) {
+            waterfallPhoto.setImageResource(getItemListOnPosition.getPhotoID( ));
+            waterfallPhoto.setVisibility(View.VISIBLE);
+        } else {
+            waterfallPhoto.setVisibility(View.GONE);
         }
 
         return listItemView;

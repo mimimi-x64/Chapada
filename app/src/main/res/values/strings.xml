@@ -24,4 +24,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="historyTitle">História</string>
+    <string name="share_with">Compartilhe</string>
+    <string name="historytext">
+        "Criado em 1961, o Parque Nacional da Chapada dos Veadeiros está localizado no nordeste do Estado de Goiás, entre os municípios de Alto Paraíso de Goiás, Cavalcante e Colinas do Sul. Protegendo uma área de 240.586,56 ha de cerrado de altitude, possui formações vegetais únicas, centenas de nascentes e cursos d’água, rochas com mais de um bilhão de anos, além de paisagens de rara beleza, com feições que se alteram ao longo do ano. O Parque também preserva áreas de antigos garimpos, como parte da história local e foi declarado Patrimônio Natural da Humanidade pela UNESCO, em 2001."
+        "\n\nAlém da conservação, o Parque tem como objetivos a pesquisa científica, a educação ambiental e a visitação pública. A caminhada e os banhos de cachoeira são as principais atividades no Parque, nas imensas paisagens da Chapada, numa viagem pelo Cerrado brasileiro nas antigas rotas usadas por garimpeiros, hoje utilizadas pelos visitante."
+        "\n\n Texto retirado do site ICMBio.gov.br"
+    </string>
 </resources>

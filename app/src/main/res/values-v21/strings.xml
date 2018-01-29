@@ -2,4 +2,6 @@
 <resources>
     <string name="sobre_este_aplicativo">Sobre este aplicativo</string>
     <string name="nav_inicio">Início</string>
+    <string name="historyTitle">História</string>
+    <string name="share_with">Compartilhe</string>
 </resources>
