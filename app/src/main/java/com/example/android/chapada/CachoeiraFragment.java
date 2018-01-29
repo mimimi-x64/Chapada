@@ -29,15 +29,15 @@ public class CachoeiraFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.list_view_fragment, container, false);
         //Initialize Item List
-        ArrayList<ListItens> listItens = new ArrayList<ListItens>();
+        ArrayList<ListItens> waterfallList = new ArrayList<ListItens>( );
         //Add sample content
-        listItens.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
-        listItens.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
-        listItens.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
-        listItens.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
-        listItens.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
+        waterfallList.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
+        waterfallList.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
+        waterfallList.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
+        waterfallList.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
+        waterfallList.add(new ListItens(R.mipmap.ic_launcher, "Title Name", "City Name"));
         //Initialize Adapter
-        ListAdapter hotelAdapter = new ListAdapter(getActivity(), listItens);
+        ListAdapter hotelAdapter = new ListAdapter(getActivity( ), waterfallList);
         // Find ListView and set Adapter inside
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(hotelAdapter);

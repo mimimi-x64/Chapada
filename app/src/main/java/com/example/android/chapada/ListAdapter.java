@@ -46,30 +46,30 @@ public class ListAdapter extends ArrayAdapter<ListItens> {
             waterfallName.setVisibility(View.GONE);
         }
 
-        TextView hostName = listItemView.findViewById(R.id.listItem_hostName);
-        if (getItemListOnPosition.checkHost()){
-            hostName.setText(getItemListOnPosition.getHostName());
-            hostName.setVisibility(View.VISIBLE);
-        } else {
-            hostName.setVisibility(View.GONE);
-        }
+//        TextView hostName = listItemView.findViewById(R.id.listItem_hostName);
+//        if (getItemListOnPosition.checkHost()){
+//            hostName.setText(getItemListOnPosition.getHostName());
+//            hostName.setVisibility(View.VISIBLE);
+//        } else {
+//            hostName.setVisibility(View.GONE);
+//        }
 
-        TextView siteName = listItemView.findViewById(R.id.listItem_website);
-        if (getItemListOnPosition.checkWebsite()){
-            siteName.setText(getItemListOnPosition.getWebSite());
-            siteName.setVisibility(View.VISIBLE);
-        } else {
-            siteName.setVisibility(View.GONE);
-        }
+//        TextView siteName = listItemView.findViewById(R.id.listItem_website);
+//        if (getItemListOnPosition.checkWebsite()){
+//            siteName.setText(getItemListOnPosition.getWebSite());
+//            siteName.setVisibility(View.VISIBLE);
+//        } else {
+//            siteName.setVisibility(View.GONE);
+//        }
 
-        TextView contactNumber = listItemView.findViewById(R.id.listItem_contactNumber);
-        if (getItemListOnPosition.checkContactNumber()){
-           // contactNumber.setText(String.valueOf(getItemListOnPosition.getContactNumber()));
-            contactNumber.setText(getItemListOnPosition.toString());
-            contactNumber.setVisibility(View.VISIBLE);
-        } else {
-            contactNumber.setVisibility(View.GONE);
-        }
+//        TextView contactNumber = listItemView.findViewById(R.id.listItem_contactNumber);
+//        if (getItemListOnPosition.checkContactNumber()){
+//           // contactNumber.setText(String.valueOf(getItemListOnPosition.getContactNumber()));
+//            contactNumber.setText(getItemListOnPosition.toString());
+//            contactNumber.setVisibility(View.VISIBLE);
+//        } else {
+//            contactNumber.setVisibility(View.GONE);
+//        }
 
         // Find ImageView on XML
         ImageView waterfallPhoto = listItemView.findViewById(R.id.img_list_cachoeira);
