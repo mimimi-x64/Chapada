@@ -6,18 +6,16 @@ package com.example.android.chapada;
 
 public class ListItens {
 
+    //Check if resources were initialized
+    private static final int NO_RESOURCE = -1;
     //Waterfall Variables
     private int mPhotoID;
     private String mWaterfallName;
     private String mCityName;
-
     //Hosting Variables
     private String mHostName;
-    private int mContactNumber;
+    private long mContactNumber;
     private String mWebSite;
-
-    //Check if resources were initialized
-    private static final int NO_RESOURCE = -1;
 
     //Waterfall Constructor
     public ListItens(int photoID, String waterfallName, String cityName) {
@@ -26,8 +24,14 @@ public class ListItens {
         mCityName = cityName;
     }
 
+    public ListItens( int photoID, String waterfallName, long contactNumber ) {
+        mPhotoID = photoID;
+        mWaterfallName = waterfallName;
+        mContactNumber = contactNumber;
+    }
+
     //Hosting Constructor
-    public ListItens(String hostName, String cityName, String webSite, int contactNumber){
+    public ListItens( String hostName, String cityName, String webSite, long contactNumber ) {
         mHostName = hostName;
         mCityName = cityName;
         mWebSite = webSite;
@@ -71,7 +75,7 @@ public class ListItens {
         return "" + mContactNumber;
     }
 
-    public int getContactNumber() {
+    public long getContactNumber() {
         return mContactNumber;
     }
     public String getHostName() {
