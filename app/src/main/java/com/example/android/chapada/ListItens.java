@@ -14,7 +14,7 @@ public class ListItens {
     private String mCityName;
     //Hosting Variables
     private String mHostName;
-    private long mContactNumber;
+    private String mContactNumber;
     private String mWebSite;
 
     //Waterfall Constructor
@@ -24,14 +24,10 @@ public class ListItens {
         mCityName = cityName;
     }
 
-    public ListItens( int photoID, String waterfallName, long contactNumber ) {
-        mPhotoID = photoID;
-        mWaterfallName = waterfallName;
-        mContactNumber = contactNumber;
-    }
 
     //Hosting Constructor
-    public ListItens( String hostName, String cityName, String webSite, long contactNumber ) {
+    public ListItens( int photoID, String hostName, String cityName, String contactNumber, String webSite ) {
+        mPhotoID = photoID;
         mHostName = hostName;
         mCityName = cityName;
         mWebSite = webSite;
@@ -51,8 +47,9 @@ public class ListItens {
     public boolean checkHost(){
         return mHostName != null;
     }
-    public boolean checkContactNumber(){
-        return mContactNumber != NO_RESOURCE;
+
+    public boolean checkContactName() {
+        return mHostName != null;
     }
 
 
@@ -75,7 +72,7 @@ public class ListItens {
         return "" + mContactNumber;
     }
 
-    public long getContactNumber() {
+    public String getContactNumber() {
         return mContactNumber;
     }
     public String getHostName() {

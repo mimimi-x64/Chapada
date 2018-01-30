@@ -28,19 +28,20 @@ public class HotelFragment extends Fragment {
                               Bundle savedInstanceState ) {
         View rootView = inflater.inflate(R.layout.list_view_fragment, container, false);
 
-        ArrayList<ListItens> hotelItens = new ArrayList<ListItens>( );
+        ArrayList<ListItens> hotelList = new ArrayList<ListItens>( );
 
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
-        hotelItens.add(new ListItens("Hotel Marriet", "São Jorge", "marriet.com", 6260965));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Alecrim do Campo", "São Jorge", "6234551118", "pousadaalecrimdocampo.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Baguá", "São Jorge", "6234551046", "pousadabagua.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Bambu Brasil", "São Jorge", "6234551004", "bambubrasil.com"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Casa das Flores", "São Jorge", "6234551055", "pousadacasadasflores.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Cristal da Terra", "São Jorge", "6234551052", "pousadacristaldaterra.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Flor do Cerrado", "São Jorge", "6234551059", "pousadaflordocerrado.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Mundo da Lua", "São Jorge", "6234551099", "pousadamundodhalua.com.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Por do Sol", "São Jorge", "6234551108", "pordosol.tur.br"));
+        hotelList.add(new ListItens(R.drawable.chapada_photo, "Hotel Trilha Violeta", "São Jorge", "6234551088", "trilhavioleta.com.br"));
 
-        ListAdapter hotelAdapter = new ListAdapter(getActivity(), hotelItens);
+
+        ListAdapter hotelAdapter = new ListAdapter(getActivity( ), hotelList);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(hotelAdapter);
 

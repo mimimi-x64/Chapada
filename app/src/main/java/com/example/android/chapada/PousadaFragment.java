@@ -35,11 +35,19 @@ public class PousadaFragment extends Fragment {
 
         getActivity( ).setTitle("Pousada");
 
-        final ArrayList<ListItens> pousadaList = new ArrayList<ListItens>( );
-        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Águas de Março", 34551080));
+        ArrayList<ListItens> pousadaList = new ArrayList<ListItens>( );
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Alecrim do Campo", "São Jorge", "6234551118", "pousadaalecrimdocampo.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Baguá", "São Jorge", "6234551046", "pousadabagua.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Bambu Brasil", "São Jorge", "6234551004", "bambubrasil.com"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Casa das Flores", "São Jorge", "6234551055", "pousadacasadasflores.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Cristal da Terra", "São Jorge", "6234551052", "pousadacristaldaterra.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Flor do Cerrado", "São Jorge", "6234551059", "pousadaflordocerrado.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Mundo da Lua", "São Jorge", "6234551099", "pousadamundodhalua.com.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Por do Sol", "São Jorge", "6234551108", "pordosol.tur.br"));
+        pousadaList.add(new ListItens(R.drawable.chapada_photo, "Pousada Trilha Violeta", "São Jorge", "6234551088", "trilhavioleta.com.br"));
 
         ListAdapter pousadaAdapter = new ListAdapter(getActivity( ), pousadaList);
-        final ListView listView = rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(pousadaAdapter);
 
         return rootView;

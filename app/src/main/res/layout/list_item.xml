@@ -28,6 +28,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/listItem_hostName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Cachoeira da Pontinha" />
+
+            <TextView
                 android:id="@+id/listItem_waterfall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,27 +50,19 @@
                 android:textSize="14sp"
                 tools:text="São Jorge" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/listItem_contactNumber"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:gravity="end">
+                tools:text="88239771" />
 
-                <Button
-                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Endereço" />
+            <TextView
+                android:id="@+id/listItem_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                tools:text="pousada.com" />
 
-                <Button
-                    android:id="@+id/contactNumber"
-                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ligar" />
-
-            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>
